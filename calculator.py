@@ -11,7 +11,7 @@ def divide(x, y):
     if y == 0:
         raise ValueError("Cannot divide by zero.")
     return x / y
-
+ 
 def modulo(x,y):
     return x % y
 
@@ -25,7 +25,8 @@ def calculator():
         '+': add,
         '-': subtract,
         '*': multiply,
-        '/': divide
+        '/': divide,
+        '%': modulo
     }
 
     if op in operations:
